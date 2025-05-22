@@ -11,7 +11,7 @@ with
             -- foreign key
         , stateprovince_id
 
-        from {{ ref('stg_address') }}
+        from {{ ref('stg_address') }} 
     )
 
     , shippedto as (
